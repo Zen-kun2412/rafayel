@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;   
+    border: 0;
+    outline: 0;
+}
+* {
+    box-sizing: border-box;
+  }
+.navication{
+    background-color: black;
+}
+.nav{
+    display: flex;
+    color: white;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.nav-click a:hover{
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+.rl a{
+    text-decoration: none;
+    color: white;
+}
+.iconhome{
+    background-color: black;
+}
+.iconhome:hover{
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    color: #fff;
+}
+.rl {
+    border: none;
+    background: url(./imgs/btn_pretty.webp) no-repeat top left;
+    color: #e4defe;
+    font-weight: bold;
+    font-size: 22px;
+    height: 52px;
+    width: 191px;
+    margin: 3px 0 3px 0;
+    background-size: contain;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-background-position: center;
+    background-position: center;
+    -webkit-background-size: contain;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}    
