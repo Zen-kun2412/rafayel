@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafayel</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dangnhap.css">
 </head>
 <body>
     <div class="containerbg"></div>
@@ -13,7 +13,7 @@
             <div class="navication" style="display: flex;">
                 <ul class="nav" style="padding-bottom: 6px;">
                     <li class="nav-item" style="font-weight: 900; margin-left: 90px; font-size: x-large; margin-top: 3px; text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;">
-                        <a href="">rafayelshop.vn</a>
+                        <a href="index.html">rafayelshop.vn</a>
                     </li>
                     <li class="nav-item" style="margin-left: 30px;">
                         <a class="iconhome">
@@ -47,21 +47,30 @@
                 </div>
             </div>
         </div>
-        <div class="main">
-            <div>
-
+        <div class="main" style="margin-bottom: 70px; margin-top: 75px;">
+            <div class="dangnhapname">
+                <h2  class="namefooter">
+                    <div  class="footerthanhngnang1"></div>
+                    <span style="font-size: xx-large; margin-left: 60px; font-size: 40px;" class="footernamemain">Đăng nhập</span>
+                    <div class="footerthanhngnang2"></div>
+                </h2>
             </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
+            <div style="background-color: #DCDCDD; margin-left: 250px;margin-right: 250px; margin-top: 30px;">
+                <div style="margin-left: 190px;" class="mainbd">
+                    <div style="display: flex;">
+                        <div for="exampleInputEmail2" style="margin-right: 20px;  margin-top: 30px;">Tên đăng nhập</div>
+                        <input id="exampleInputEmail2" style="margin-bottom: 20px; margin-top: 30px;" type="text">
+                    </div>
+                    <div style="display: flex;">
+                        <div for="exampleInputPassword2" style="margin-right: 20px; margin-left: 35px;" >Mật khẩu</div>
+                        <input id="exampleInputPassword2" style="margin-bottom: 20px;" type="password">
+                    </div>
+                    <div class="click" style="display: flex; margin-left: 115px;">
+                        <button onclick="handleLogin()">Đăng nhập</button>
+                        <a class="aclick" href="dangky.html">Đăng ký</a>
+                        <a style="margin-left: 20px; margin-top: 5px; text-decoration: none; color:#17a2b8 ;" href="lalaimk.html">Quên mật khẩu</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer">
@@ -114,12 +123,14 @@
         </li>
     </ul>
     <div class="bordermess">
-       
-        <a href="https://www.messenger.com/e2ee/t/24933538826237471"><img src="./imgs/messenger.png" style="height: 78px;margin-left: -10px;margin-top: -10px" alt=""></a>
-         
+        <ul class="mess">
+            <li class="messenger">
+                <a href="https://www.messenger.com/e2ee/t/24933538826237471"><img src="./imgs/messenger.png" style="height: 78px;margin-left: -10px;margin-top: -10px" alt=""></a>
+            </li>
+        </ul>
     </div>
 </body>
-<script src="index.js"></script>
+<script src="dk.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>

@@ -77,11 +77,43 @@
     -webkit-justify-content: center;
     justify-content: center;
 }    
-
-
-.main {
-    width: 800px;
+.footernamemain{
+    text-shadow: 0 0 10px #5853ad, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    color: white;
 }
+.mainbd input{
+    box-shadow: inset 4px 4px 8px #e1e0e0, inset -5px -5px 8px #fdfcfc;
+    border: 1px solid #f3f5f7;
+}
+.click button{
+    background-color: #17a2b8;
+    color: white;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    width:80px;
+    height: 30px;
+    border-radius: 5px;
+}
+.aclick {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 20px;
+    width:85px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+.click a:hover{
+    cursor: pointer;
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+.click button:hover{
+    cursor: pointer;
+    background-color: #0a6473;
+}
+
 
 
 .footer{
@@ -129,8 +161,8 @@
 }
 .mess{
     position: fixed;
-    right: 25px;
-    bottom: 25px;
+    right: 17px;
+    bottom: 11px;
     z-index: 999;
     list-style-type: none;
     cursor: pointer;
