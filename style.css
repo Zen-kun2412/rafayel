@@ -80,7 +80,12 @@
 
 
 .main {
-    width: 800px;
+    height: 800px;
+}
+.caican{
+    width: 87px;
+    margin-left: 570px;
+    margin-top: 85px;
 }
 
 
@@ -95,6 +100,8 @@
 .footername{
     text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
     color: white;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+     font-size: 30px;
 }
 .footerthanhngnang1{
     content: "";
@@ -146,4 +153,15 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
+}
+.product-panel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-pro{
+    width: 300px;
+}
+.img-pro{
+    width: 100%;
 }
