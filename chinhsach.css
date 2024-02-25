@@ -17,15 +17,16 @@
     z-index: -1;
 }
 .container{
-position: absolute;
+    position: absolute;
   left: 0;
   top: 0;
   right: 0;
+  
 }
 .navication{
-    position: fixed;
     background-color: rgb(0,0,0,0.5);
-    
+    position: fixed;
+    z-index: 2;
 }
 .nav{
     display: flex;
@@ -95,7 +96,7 @@ position: absolute;
     height: 30px;
     border-radius: 5px;
 }
-.aclick{
+.aclick {
     background-color: white;
     color: black;
     text-decoration: none;
@@ -115,7 +116,15 @@ position: absolute;
     background-color: #0a6473;
 }
 
-
+.main {
+    height: 100vh;
+    /* margin-bottom: 800px; */
+/* background-color: red; */
+    z-index: 0;
+    background-image: url(./imgs/chinhsach.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .footer{
     background: rgb(27 25 60 / 58%);
@@ -162,8 +171,8 @@ position: absolute;
 }
 .mess{
     position: fixed;
-    right: 25px;
-    bottom: 25px;
+    right: 17px;
+    bottom: 11px;
     z-index: 999;
     list-style-type: none;
     cursor: pointer;
@@ -180,3 +189,41 @@ position: absolute;
     height: 60px;
     border-radius: 50%;
 }
+
+
+
+      swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fdf7e9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      swiper-container {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+
+.Chinhsach{
+    width: 1000px;
+    margin-top: 100px; 
+    height: 450px; 
+    margin-left: 140px;
+    padding-top: 120px;
+    z-index: -2;
+}      

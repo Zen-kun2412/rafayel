@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
     <title>Rafayel</title>
-    <link rel="stylesheet" href="dangnhap.css">
+    <link rel="stylesheet" href="chinhsach.css">
 </head>
 <body>
     <div class="containerbg"></div>
@@ -31,7 +35,7 @@
                     <li class="nav-item; nav-click" style="margin-left: 35px;">
                         <a href="">Giới thiệu</a>
                     </li>
-                    <li class="nav-item; nav-click" style="margin-left: 35px;">
+                    <li class="nav-item; nav-click" style="margin-left: 35px; text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;">
                         <a href="chinhsach.html">Chính sách</a>
                     </li>
                 </ul>
@@ -41,37 +45,32 @@
                             <a href="dangky.html">Đăng ký</a>
                         </li>
                         <li class="rl" style="margin-left: 35px;display: flex;justify-content: center;align-items: center;">
-                            <a href="dangnhap.html" style="text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;">Đăng nhập</a>
+                            <a href="dangnhap.html" >Đăng nhập</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="main" style="margin-bottom: 70px; margin-top: 75px;">
-            <div class="dangnhapname">
-                <h2  class="namefooter">
-                    <div  class="footerthanhngnang1"></div>
-                    <span style="font-size: xx-large; margin-left: 60px; font-size: 40px;" class="footernamemain">Đăng nhập</span>
-                    <div class="footerthanhngnang2"></div>
-                </h2>
-            </div>
-            <div style="background-color: #DCDCDD; margin-left: 250px;margin-right: 250px; margin-top: 30px;">
-                <div style="margin-left: 190px;" class="mainbd">
-                    <div style="display: flex;">
-                        <div for="exampleInputEmail2" style="margin-right: 20px;  margin-top: 30px;">Tên đăng nhập</div>
-                        <input id="exampleInputEmail2" style="margin-bottom: 20px; margin-top: 30px;" type="text">
-                    </div>
-                    <div style="display: flex;">
-                        <div for="exampleInputPassword2" style="margin-right: 20px; margin-left: 35px;" >Mật khẩu</div>
-                        <input id="exampleInputPassword2" style="margin-bottom: 20px;" type="password">
-                    </div>
-                    <div class="click" style="display: flex; margin-left: 115px;">
-                        <button onclick="handleLogin()">Đăng nhập</button>
-                        <a class="aclick" href="dangky.html">Đăng ký</a>
-                        <a style="margin-left: 20px; margin-top: 5px; text-decoration: none; color:#17a2b8 ;" href="lalaimk.html">Quên mật khẩu</a>
-                    </div>
+        <div class="main">
+            
+                <!-- <img style="width: 100%;" src="./imgs/chinhsach.jpg" alt=""> -->
+                <div class="Chinhsach" >
+                    <swiper-container
+                    class="mySwiper"
+                    pagination="true"
+                    pagination-clickable="true"
+                    navigation="true"
+                    space-between="30"
+                    loop="true"
+                  >
+                    <swiper-slide>Slide 1</swiper-slide>
+                    <swiper-slide>Slide 2</swiper-slide>
+                  </swiper-container>
+              
+                  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
                 </div>
-            </div>
+         
+            
         </div>
         <div class="footer">
             <div>
