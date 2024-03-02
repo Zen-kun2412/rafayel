@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;   
+    border: 0;
+    outline: 0;
+}
+* {
+    box-sizing: border-box;
+  }
+.containerbg{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-image: url(./imgs/backgroud.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.container{
+    position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  
+}
+.navication{
+    background-color: rgb(0,0,0,0.5);
+    position: fixed;
+    z-index: 2;
+}
+.nav{
+    display: flex;
+    color: white;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.nav-click a:hover{
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+.rl a:hover{
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+.rl a{
+    text-decoration: none;
+    color: white;
+}
+
+.iconhome svg:hover{
+    filter: drop-shadow(0 0 0.75rem #69e0ff);
+    /* box-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    background-color:#69e0ff ; */
+} 
+.rl {
+    border: none;
+    background: url(./imgs/btn_pretty.webp) no-repeat top left;
+    color: #e4defe;
+    font-weight: bold;
+    font-size: 22px;
+    height: 52px;
+    width: 191px;
+    margin: 3px 0 3px 0;
+    background-size: contain;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-background-position: center;
+    background-position: center;
+    -webkit-background-size: contain;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}    
+.footernamemain{
+    text-shadow: 0 0 10px #5853ad, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    color: white;
+}
+.mainbd input{
+    box-shadow: inset 4px 4px 8px #e1e0e0, inset -5px -5px 8px #fdfcfc;
+    border: 1px solid #f3f5f7;
+}
+.click button{
+    background-color: #17a2b8;
+    color: white;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    width:80px;
+    height: 30px;
+    border-radius: 5px;
+}
+.aclick {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 20px;
+    width:85px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+.click a:hover{
+    cursor: pointer;
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+.click button:hover{
+    cursor: pointer;
+    background-color: #0a6473;
+}
+
+.main {
+    height: 100vh;
+    /* margin-bottom: 800px; */
+/* background-color: red; */
+    z-index: 0;
+    background-image: url(./imgs/chinhsach.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer{
+    background: rgb(27 25 60 / 58%);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    /* margin-right: -6px;
+    margin-left: -8px; */
+}
+.footername{
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    color: white;
+}
+.footerthanhngnang1{
+    content: "";
+   width: 300px;
+    height: 15px;
+    background-image: url(./imgs/thangngang.png);
+    background-repeat: no-repeat;
+}
+.footerthanhngnang2{
+    content: "";
+    width: 300px;
+    height: 15px;
+    background-image: url(./imgs/thangngang2.png);
+    background-repeat: no-repeat;
+}
+.namefooter{
+    display: flex; 
+    flex-direction: column;
+    margin-left: 500px;
+}
+.footerbody{
+    display: flex;
+}
+
+.fixed{
+    position: fixed;
+    right: 10px;
+    bottom: 140px;
+    z-index: 999;
+    list-style-type: none;
+    cursor: pointer;
+}
+.mess{
+    position: fixed;
+    right: 17px;
+    bottom: 11px;
+    z-index: 999;
+    list-style-type: none;
+    cursor: pointer;
+}
+.bordermess{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 999;
+    list-style-type: none;
+    cursor: pointer;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.comesoon{
+    font-size: 40px;
+    padding-top: 260px;
+    padding-left:210px ;
+}

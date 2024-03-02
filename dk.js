@@ -1,4 +1,4 @@
-
+localStorage.setItem('data')
 let dataUser1 = []
 // localStorage.setItem('data', JSON.stringify(dataUser1))
 
@@ -70,3 +70,4 @@ function updatePassword() {
         alert('Mật khẩu đã được cập nhật thành công!');
     } 
 }
+localStorage.getItem('data')
