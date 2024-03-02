@@ -5,37 +5,37 @@ let data = [
         price: "110,000 đ",
     },
     {
-        namePro:"Ghế",
+        namePro:"Áo thun Venti",
         image:"./img/venti.jpg",
         price: "110,000 đ",
     },
     {
-        namePro:"Đèn",
+        namePro:"Áo thun Kokomi",
         image:"./img/kokomi.jpg",
         price: "110,000 đ",
     },
     {
-        namePro:"Tủ",
+        namePro:"Áo thun Klee",
         image:"./img/klee.jpg",
         price: "110,000 đ",
     },
     {
-        namePro:"Tủ",
+        namePro:"Áo thun Kazuha",
         image:"./img/kazuha.jpg",
         price: "110,000 đ",
     },
     {
-        namePro:"Tủ",
+        namePro:"Áo thun Hutao",
         image:"./img/hutao.jpg",
         price: "110,000 đ",
     },
     {
-        namePro:"Tủ",
+        namePro:"Áo thun Ganyu",
         image:"./img/ganyu.jpg",
         price: "110,000 đ",
     },
     {
-        namePro:"Tủ",
+        namePro:"Áo thun Klee",
         image:"./img/klee.jpg",
         price: "110,000 đ",
     },
@@ -61,4 +61,16 @@ for (let i = 0; i < data.length; i++) {
 }
 document.getElementById("product-panel").innerHTML = htmlProduct;
 
- 
+document.getElementById("btn-submit").addEventListener("click", function () {
+    const email = "wunood@gmail.com";
+    const message = document.getElementById("message").value;
+    const mailtoLink = `mailto:${email}?subject=${message}&body= ${message}`;
+    window.location.href = mailtoLink;
+    console.log("🚀 ~ file: index.js:6 ~ mailtoLink:", mailtoLink)
+});
+
+
+
+
+
+// đồng hồ đếm tgian

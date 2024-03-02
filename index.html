@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="overlay"></div> <!-- Lớp phủ -->
+<div id="message">
+    <p class="red"><A>Lưu ý</A>: Sự kiện đồng giá 110.000đ sẽ kết thúc sau</p>
+    <div id="timer"></div>
+    <button id="closeButton" onclick="closeMessage()">Đóng</button>
+</div>
     <div class="containerbg"></div>
     <div class="container">
         <div class="header">
@@ -29,7 +35,7 @@
                         <a href="">Lịch sử mua</a>
                     </li>
                     <li class="nav-item; nav-click" style="margin-left: 35px;">
-                        <a href="">Giới thiệu</a>
+                        <a href="gioithieu.html">Giới thiệu</a>
                     </li>
                     <li class="nav-item; nav-click" style="margin-left: 35px;">
                         <a href="chinhsach.html">Chính sách</a>
@@ -234,4 +240,48 @@ gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 <script src="top.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    function showMessage() {
+    var overlay = document.getElementById("overlay");
+    var messageDiv = document.getElementById("message");
+    overlay.style.display = "block";
+    messageDiv.style.display = "block";
+    startTimer();
+}
+
+function closeMessage() {
+    var overlay = document.getElementById("overlay");
+    var messageDiv = document.getElementById("message");
+    overlay.style.display = "none";
+    messageDiv.style.display = "none";
+}
+
+function startTimer() {
+    var timer = setInterval(function () {
+        var targetTime = new Date("2024-03-03T12:00:00+00:00"); // Thời gian mong muốn (theo giờ Việt Nam, +7 giờ so với UTC)
+        var now = new Date();
+        var diff = targetTime - now;
+
+        var hours = Math.floor(diff / (1000 * 60 * 60));
+        var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        var display = document.getElementById("timer");
+        display.textContent = hours + ":" + minutes + ":" + seconds;
+
+        if (diff <= 0) {
+            clearInterval(timer);
+            display.textContent = "00:00:00";
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    showMessage();
+};
+</script>
 </html>

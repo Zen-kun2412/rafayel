@@ -1,21 +1,21 @@
 let datatop = [
     {
-        namePro:"Áo thun Xiao",
+        namePro:"Áo thun Ei",
         image:"./img/ei.jpg",
         price: "110,000 đ",
     },
     {
-        namePro:"Ghế",
+        namePro:"Áo thun Hutao",
         image:"./img/hutaotop.jpg",
         price: "110,000 đ",
     },
     {
-        namePro:"Đèn",
+        namePro:"Áo thun Paimon",
         image:"./img/paimon.jpg",
         price: "110,000 đ",
     },
     {
-        namePro:"Tủ",
+        namePro:"Áo thun Wanderer",
         image:"./img/wanderer.jpg",
         price: "110,000 đ",
     },
