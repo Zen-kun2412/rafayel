@@ -68,9 +68,3 @@ document.getElementById("btn-submit").addEventListener("click", function () {
     window.location.href = mailtoLink;
     console.log("🚀 ~ file: index.js:6 ~ mailtoLink:", mailtoLink)
 });
-
-
-
-
-
-// đồng hồ đếm tgian

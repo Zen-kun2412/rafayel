@@ -1,8 +1,20 @@
-localStorage.setItem('data')
-let dataUser1 = []
-// localStorage.setItem('data', JSON.stringify(dataUser1))
+// let acc = [
+//     {
+//         id: 1,
+//         email: "admin@gmail.com",
+//         username: "admin",
+//         password: "admin",
+//     },
+//     {
+//         id: 2,
+//         email: "admin2@gmail.com",
+//         username: "admin2",
+//         password: "admin2",
+//     }
+// ];
+// localStorage.setItem("account", JSON.stringify(acc));
 
-let dataUser=JSON.parse(localStorage.getItem('data'));
+let dataUser=JSON.parse(localStorage.getItem('account'));
 function checkEmail(email, password, type){
     console.log("🚀 ~ file: index.js:39 ~ checkEmail ~ email:", email, password, type)
     let exists = false; // tạo biến để kiếm tra tài khoản có tồn tại hay không (true: là đã tồn tại, false: chưa tồn tại)
@@ -45,11 +57,11 @@ function handleRegister() {
     let valueConfPassword = document.getElementById('exampleInputPassword2').value;
     if (valueEmail !== '' && valuePassword !== '') {
         if (checkEmail(valueEmail)) {
-            // alert('Email already exists')
+            alert('Email already exists')
         } else {
             if (valuePassword === valueConfPassword) {
                 dataUser.push({ id: dataUser.length + 1, email: valueEmail, password: valuePassword })
-                localStorage.setItem('data', JSON.stringify(dataUser))
+                localStorage.setItem('account', JSON.stringify(dataUser))
                 alert('Register success') // ngược lại thông báo email hợp lệ
             } else {
                 alert('Confirm Password fail') // ngược lại thông báo email hợp lệ
